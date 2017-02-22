@@ -63,4 +63,5 @@ class Personnage
     {
         return $this->_weapon;
     }
+
 }
