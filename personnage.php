@@ -1,6 +1,8 @@
 <?php
 
+
 class Personnage
+
 {
     private $_id
     private $_atk
