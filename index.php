@@ -184,13 +184,16 @@ elseif (isset($_GET['ensorceler']))
 ?>
     <!DOCTYPE html>
     <html>
-    <head>
-        <title>TP : Mini jeu de combat - Version 2</title>
-
-        <meta charset="utf-8" />
-    </head>
+   <?php require('head.php'); ?>
     <body>
-    <p>Nombre de personnages créés : <?= $manager->count() ?></p>
+    <h1 class="text-center">JEU PHP EN POO</h1>
+
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <p>Nombre de personnages créés : <?= $manager->count() ?></p>
+    </div>
+    </div>
+
     <?php
     if (isset($message)) // On a un message à afficher ?
     {
@@ -274,18 +277,29 @@ elseif (isset($_GET['ensorceler']))
     else
     {
         ?>
-        <form action="" method="post">
-            <p>
-                Nom : <input type="text" name="nom" maxlength="50" /> <input type="submit" value="Utiliser ce personnage" name="utiliser" /><br />
-                Type :
-                <select name="type">
+        <form action="" method="post" style="padding: 15px;">
+        <div class="form-group">
+            <label for="name" class="cols-sm-2 control-label">Nom du personnage</label>
+            <div>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="nom" id="name"/>
+                </div>
+                <div class="input-group">
+                <input type="submit" value="Utiliser ce personnage" name="utiliser" class="btn btn-primary" />
+                    <div style="margin-top: 15px;">
+                <label for="name" class="cols-sm-2 control-label">Type de personnage</label>
+                    </div>
+                <select name="type" class="form-control">
                     <option value="magicien">Magicien</option>
                     <option value="guerrier">Guerrier</option>
                     <option value="paladin">Paladin</option>
                 </select>
-                <input type="submit" value="Créer ce personnage" name="creer" />
-            </p>
+                </div>
+            </div>
+            <input type="submit" value="Créer ce personnage" name="creer" class="btn btn-primary" />
+        </div>
         </form>
+<!--    Fin test form   -->
         <?php
     }
     ?>
