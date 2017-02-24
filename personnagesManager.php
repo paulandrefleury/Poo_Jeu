@@ -69,6 +69,7 @@ class PersonnagesManager
         {
             case 'guerrier': return new Guerrier($perso);
             case 'magicien': return new Magicien($perso);
+            case 'paladin': return new Paladin($perso);
             default: return null;
         }
     }

@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 function chargerClasse($classe)
 {
     require $classe . '.php';
@@ -35,6 +37,10 @@ if (isset($_POST['creer']) && isset($_POST['nom'])) // Si on a voulu créer un p
 
         case 'guerrier' :
             $perso = new Guerrier(['nom' => $_POST['nom']]);
+            break;
+
+        case 'paladin' :
+            $perso = new Paladin(['nom' => $_POST['nom']]);
             break;
 
         default :
@@ -213,6 +219,11 @@ elseif (isset($_GET['ensorceler']))
                     case 'guerrier' :
                         echo 'Protection : ';
                         break;
+
+                    case 'paladin' :
+                        echo 'Protection : ';
+                        echo 'Magie : ';
+                        break;
                 }
 
                 echo $perso->atout();
@@ -270,6 +281,7 @@ elseif (isset($_GET['ensorceler']))
                 <select name="type">
                     <option value="magicien">Magicien</option>
                     <option value="guerrier">Guerrier</option>
+                    <option value="paladin">Paladin</option>
                 </select>
                 <input type="submit" value="Créer ce personnage" name="creer" />
             </p>
