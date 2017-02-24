@@ -43,7 +43,7 @@ CREATE TABLE `personnages_v2` (
   `nom` varchar(50) NOT NULL,
   `degats` tinyint(3) UNSIGNED NOT NULL DEFAULT '0',
   `timeEndormi` int(10) UNSIGNED DEFAULT '0',
-  `type` enum('magicien','guerrier') NOT NULL,
+  `type` enum('magicien','guerrier','paladin') NOT NULL,
   `atout` tinyint(3) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
