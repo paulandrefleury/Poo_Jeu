@@ -179,7 +179,7 @@ elseif (isset($_GET['ensorceler']))
     <!DOCTYPE html>
     <html>
     <head>
-        <title>TP : Mini jeu de combat - Version 2</title>
+        <title>RPG - JcJ</title>
 
         <meta charset="utf-8" />
     </head>
