@@ -26,7 +26,7 @@ $_SESSION['nom'] = $nom;
 
     <h1>Choisir votre personnage</h1>
 
-    <form method="POST" action="step2.php">
+    <form method="POST" action="step1.php">
         <label>Nom de ton Guerrier :</label>
         <input type="text" name="nom">
         <select name="type">
