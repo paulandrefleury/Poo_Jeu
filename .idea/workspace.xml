@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b3d124e-ea14-41d2-919b-8946831dfb89" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vues/step2.php" afterPath="$PROJECT_DIR$/vues/step1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/perso.php" afterPath="$PROJECT_DIR$/vues/perso.php" />
-    </list>
+    <list default="true" id="7b3d124e-ea14-41d2-919b-8946831dfb89" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -279,15 +275,15 @@
       <option name="presentableId" value="Default" />
       <updated>1488029913344</updated>
       <workItem from="1488029914693" duration="3172000" />
-      <workItem from="1488033414869" duration="2320000" />
+      <workItem from="1488033414869" duration="2554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5492000" />
+    <option name="totallyTimeSpent" value="5726000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2518797" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
